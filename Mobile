@@ -1,0 +1,174 @@
+from time import sleep
+import sys
+import time
+def slowprint(s):
+	for c in s + '\n':
+		sys.stdout.write(c)
+		sys.stdout.flush()
+		time.sleep(1./10000)
+
+print('''
+
+
+
+   IFNS-ES (加密/解密系統) 版本M16.4(Beta) is Starting...
+   ----------------------------------------------------
+
+''') ; sleep(2)
+print('''
+   NOTICE: The only difference between the MOBILE and the PC version includes removing "pip" and "colorama" which Python3IDE doesn't support, which makes this whole program more lightweight.
+   ---------------------------------------------------------------------------------------
+''') ; sleep(3)
+
+#Encrypter 
+from time import sleep
+
+
+plain_text = input ('''      1E- Enter message to be ENCRYPTED : ''')
+print(''' 
+    ''')
+
+encrypted_text = ""
+
+for letter in plain_text:
+    
+    com_letter = ord(letter)
+    
+    com_letter = (com_letter) + 1
+    
+    reverse = chr(com_letter)
+    
+    encrypted_text = encrypted_text + str(reverse)
+
+print('''
+      Your encrypted message is : ''',encrypted_text)  ; sleep(3)  
+
+#Decryption Sevice
+enter_encrypted_text = input('''
+
+
+      1D- Enter message to be DECRYPTED : ''')
+print(''' 
+    ''')
+
+decrypted_text = ""
+
+for char in enter_encrypted_text:
+    
+    com_char = ord(char)
+    
+    com_char = (com_char) - 1
+    
+    reverser = chr(com_char)
+    
+    decrypted_text = decrypted_text + str(reverser)
+    
+print('''
+      Your decrypted message is : ''',decrypted_text) ; sleep(3)
+
+plain_text = input ('''
+     -----------------------------------------------------
+
+
+      2E- Enter message to be encrypted : ''')
+print(''' 
+    ''')
+
+encrypted_text = ""
+
+for letter in plain_text:
+    
+    com_letter = ord(letter)
+    
+    com_letter = (com_letter) + 1
+    
+    reverse = chr(com_letter)
+    
+    encrypted_text = encrypted_text + str(reverse)
+
+print('''
+      Your encrypted message is : ''',encrypted_text)  ; sleep(3)  
+
+#Decryption Sevice
+enter_encrypted_text = input('''
+
+
+      2D- Enter message to be decrypted : ''')
+print(''' 
+    ''')
+
+decrypted_text = ""
+
+for char in enter_encrypted_text:
+    
+    com_char = ord(char)
+    
+    com_char = (com_char) - 1
+    
+    reverser = chr(com_char)
+    
+    decrypted_text = decrypted_text + str(reverser)
+    
+print('''
+      Your decrypted message is : ''',decrypted_text) ; sleep(3)
+
+plain_text = input ('''
+     -----------------------------------------------------
+
+
+      3E- Enter message to be encrypted : ''')
+print(''' 
+    ''')
+
+encrypted_text = ""
+
+for letter in plain_text:
+    
+    com_letter = ord(letter)
+    
+    com_letter = (com_letter) + 1
+    
+    reverse = chr(com_letter)
+    
+    encrypted_text = encrypted_text + str(reverse)
+
+print('''
+      Your encrypted message is : ''',encrypted_text)  ; sleep(3)  
+
+#Decryption Sevice
+enter_encrypted_text = input('''
+
+
+      3D- Enter message to be decrypted : ''')
+print(''' 
+    ''')
+
+decrypted_text = ""
+
+for char in enter_encrypted_text:
+    
+    com_char = ord(char)
+    
+    com_char = (com_char) - 1
+    
+    reverser = chr(com_char)
+    
+    decrypted_text = decrypted_text + str(reverser)
+    
+print('''
+      Your decrypted message is : ''',decrypted_text) ; sleep(3)
+
+#Footer
+
+
+slowprint('''     -----------------------------------------------------
+''')
+slowprint('''
+
+
+
+                    WARNING: ALL DATA would be erased within 25 seconds. ⓒ MTU Technologies 2022
+                    
+                    ''')
+
+sleep(25) #this window won't close for 25 seconds, enough to see the greeting
